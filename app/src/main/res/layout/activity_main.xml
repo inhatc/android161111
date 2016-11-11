@@ -18,14 +18,20 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Hello"
         android:id="@+id/button" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Your name?"
         android:id="@+id/button2" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New CheckBox"
+        android:id="@+id/checkBox" />
 
     <RadioGroup
         android:checked="true"
@@ -36,7 +42,7 @@
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New RadioButton"
+        android:text="치킨"
         android:id="@+id/radioButton2"
         android:layout_gravity="center_horizontal" />
 
@@ -45,5 +51,16 @@
         android:layout_height="wrap_content"
         android:text="피자"
         android:id="@+id/radioButton" /></RadioGroup>
+
+    <RatingBar
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar" />
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/calendarView"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
