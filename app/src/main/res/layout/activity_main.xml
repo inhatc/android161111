@@ -9,11 +9,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.ryuilhan.myapplication2.MainActivity"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimary"
+    android:id="@+id/container">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/TextView1"
         android:text="Hello World!" />
 
     <Button
@@ -38,30 +40,34 @@
         android:checked="true"
         android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/RG1">
 
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="치킨"
+        android:text="Blue"
         android:id="@+id/radioButton2"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:checked="true" />
 
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="피자"
-        android:id="@+id/radioButton" /></RadioGroup>
+        android:text="Red"
+        android:id="@+id/radioButton" />
+    </RadioGroup>
 
     <RatingBar
-        android:layout_width="349dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ratingBar" />
+        android:id="@+id/ratingBar"
+        android:layout_gravity="center_horizontal" />
 
     <CalendarView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/calendarView"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/calendarView" />
 
 </LinearLayout>
+
